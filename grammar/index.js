@@ -1,3 +1,4 @@
-require('./builtIns');
+// require('./builtIns');
 // require('./game');
 // require('./module');
+require('./callback');
