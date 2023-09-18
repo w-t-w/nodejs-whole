@@ -2,4 +2,5 @@
 // require('./game');
 // require('./module');
 // require('./callback');
-require('./eventloop');
+// require('./eventloop');
+require('./promise');
