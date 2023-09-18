@@ -12,7 +12,7 @@ const result_selection = {
     ['-1']: '你输了!',
     0: '平局!',
     1: '你赢了!'
-}
+};
 
 let player_won_number = 1,
     last_player_action = null,
