@@ -2,12 +2,60 @@
 <html lang="zh-CN">
 <header>
     <meta charset="utf-8" />
-    <title>游戏: 剪刀、石头和布!!!</title>
+    <title>game rock、scissors or paper</title>
+    <style>
+        html,body {
+            padding: 0;
+            margin: 0;
+        }
+        #result_section {
+            width: 1000px;
+            height: 800px;
+            background-color: darkgray;
+            margin: 8px 4px;
+            padding: 4px 8px;
+            font-weight: bolder;
+            color: #fff;
+        }
+        #button_area {
+            margin: 8px 0;
+        }
+        .game_action {
+            margin: 0 4px;
+            width: 120px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    </style>
 </header>
 <body>
-<section>
-    hello geekTime!!!!!
-    I'm Gary!wtw!
+<section id="result_section">
 </section>
+<section id="button_area">
+    <button id="rock" class="game_action">
+        石头
+    </button>
+    <button id="scissors" class="game_action">
+        剪刀
+    </button>
+    <button id="paper" class="game_action">
+        布
+    </button>
+</section>
+<script type="text/javascript">
+    const result_section = document.getElementById('result_section');
+    const game_actions = document.getElementsByClassName('game_action');
+    [...game_actions].forEach(function (game_action) {
+        game_action.addEventListener('click', function (e) {
+            const target = e.target;
+            const id = target.id;
+            fetch(`./action?action=${id}`)
+                .then(res => res.text())
+                .then(text => result_section.innerHTML += `${text}<br/>`);
+        });
+    });
+</script>
 </body>
 </html>
