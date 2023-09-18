@@ -3,4 +3,6 @@
 // require('./module');
 // require('./callback');
 // require('./eventloop');
-require('./promise');
+// require('./promise');
+// require('./async');
+require('./http');
