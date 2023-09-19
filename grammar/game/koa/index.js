@@ -85,8 +85,7 @@ game_koa.use(async (ctx, next) => {
             if (result_number === player_won_number)
                 ctx.player_won = true;
 
-            const result = result_section[result_number];
-            ctx.result = result;
+            ctx.result = result_section[result_number];
 
             resolve();
             clearTimeout(timer);
