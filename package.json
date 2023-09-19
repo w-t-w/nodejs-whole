@@ -4,7 +4,11 @@
   "description": "nodejs whole structure",
   "main": "index.js",
   "scripts": {
-    "grammar": "nodemon ./grammar/index.js"
+    "grammar": "nodemon ./grammar/index.js",
+    "grammar:rpc:simplex:server": "node ./grammar/rpc/simplex/server/index.js",
+    "grammar:rpc:simplex:client": "node ./grammar/rpc/simplex/client/index.js",
+    "grammar:rpc:half-dublex:server": "node ./grammar/rpc/half-dublex/server/index.js",
+    "grammar:rpc:half-dublex:client": "node ./grammar/rpc/half-dublex/client/index.js"
   },
   "keywords": [
     "nodejs",
