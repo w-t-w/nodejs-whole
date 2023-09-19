@@ -41,17 +41,18 @@ socket.connect({
     keepAlive: true
 });
 
+// for (let i = 0; i < 100; i++) {
 index = Math.floor(Math.random() * lesson_ids_length);
 socket.write(encode(lessonIds[index]));
+// }
 
 socket.on('data', buffer => {
     const seq = buffer.readInt16BE();
     const body = buffer.slice(seq_length);
     const result = body.toString();
     console.log(`课程下标为 ${index + 1} 位置上的包头为 ${seq + 1} 的 课程名称为 ${result}`);
-
-    index = Math.floor(Math.random() * lesson_ids_length);
-    socket.write(encode(lessonIds[index]));
+    // index = Math.floor(Math.random() * lesson_ids_length);
+    // socket.write(encode(lessonIds[index]));
 });
 
 function encode(id) {
