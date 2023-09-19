@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "grammar": "nodemon ./grammar/index.js",
-    "grammar:rpc:simplex:server": "node ./grammar/rpc/simplex/server/index.js",
-    "grammar:rpc:simplex:client": "node ./grammar/rpc/simplex/client/index.js",
-    "grammar:rpc:half-dublex:server": "node ./grammar/rpc/half-dublex/server/index.js",
-    "grammar:rpc:half-dublex:client": "node ./grammar/rpc/half-dublex/client/index.js",
-    "grammar:rpc:dublex:server": "node ./grammar/rpc/dublex/server/index.js",
-    "grammar:rpc:dublex:client": "node ./grammar/rpc/dublex/client/index.js"
+    "grammar:rpc:simplex:server": "nodemon ./grammar/rpc/simplex/server/index.js",
+    "grammar:rpc:simplex:client": "nodemon ./grammar/rpc/simplex/client/index.js",
+    "grammar:rpc:half-dublex:server": "nodemon ./grammar/rpc/half-dublex/server/index.js",
+    "grammar:rpc:half-dublex:client": "nodemon ./grammar/rpc/half-dublex/client/index.js",
+    "grammar:rpc:dublex:server": "nodemon ./grammar/rpc/dublex/server/index.js",
+    "grammar:rpc:dublex:client": "nodemon ./grammar/rpc/dublex/client/index.js",
+    "project": "nodemon ./project/index.js"
   },
   "keywords": [
     "nodejs",
