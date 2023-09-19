@@ -8,7 +8,9 @@
     "grammar:rpc:simplex:server": "node ./grammar/rpc/simplex/server/index.js",
     "grammar:rpc:simplex:client": "node ./grammar/rpc/simplex/client/index.js",
     "grammar:rpc:half-dublex:server": "node ./grammar/rpc/half-dublex/server/index.js",
-    "grammar:rpc:half-dublex:client": "node ./grammar/rpc/half-dublex/client/index.js"
+    "grammar:rpc:half-dublex:client": "node ./grammar/rpc/half-dublex/client/index.js",
+    "grammar:rpc:dublex:server": "node ./grammar/rpc/dublex/server/index.js",
+    "grammar:rpc:dublex:client": "node ./grammar/rpc/dublex/client/index.js"
   },
   "keywords": [
     "nodejs",
