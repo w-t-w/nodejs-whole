@@ -1,0 +1,10 @@
+message User {
+  required string username = 1;
+  required uint32 age = 2;
+  required bool gender = 3;
+  required Hobby hobby = 4;
+}
+
+message Hobby {
+  required string sports = 1;
+}
