@@ -1,1 +1,2 @@
-require('./download');
+// require('./download');
+require('./detail');
