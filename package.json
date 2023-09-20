@@ -12,7 +12,8 @@
     "grammar:rpc:dublex:server": "nodemon ./grammar/rpc/dublex/server/index.js",
     "grammar:rpc:dublex:client": "nodemon ./grammar/rpc/dublex/client/index.js",
     "project": "nodemon ./project/index.js",
-    "project:detail:server": "nodemon ./project/detail/server/index.js"
+    "project:detail:server": "nodemon ./project/detail/server/index.js",
+    "graphql": "nodemon ./graphql/index.js"
   },
   "keywords": [
     "nodejs",
@@ -27,6 +28,7 @@
     "babel-loader": "^9.1.3",
     "easy_sock": "^0.4.1",
     "express": "^4.18.2",
+    "graphql": "^15.8.0",
     "koa": "^2.14.2",
     "koa-graphql": "^0.12.0",
     "koa-mount": "^4.0.0",
