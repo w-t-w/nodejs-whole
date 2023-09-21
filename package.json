@@ -13,7 +13,11 @@
     "grammar:rpc:dublex:client": "nodemon ./grammar/rpc/dublex/client/index.js",
     "project": "nodemon ./project/index.js",
     "project:detail:server": "nodemon ./project/detail/server/index.js",
-    "graphql": "nodemon ./graphql/index.js"
+    "graphql": "nodemon ./graphql/index.js",
+    "component": "webpack --config=./project/list/component/webpack.component.js --color",
+    "ssr": "webpack --config=./project/list/backend/webpack.ssr.js --color",
+    "server": "nodemon ./project/list/backend/server/index.js",
+    "client": "nodemon ./project/list/backend/client/index.js"
   },
   "keywords": [
     "nodejs",
@@ -25,7 +29,10 @@
   "devDependencies": {
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
     "babel-loader": "^9.1.3",
+    "core-js": "^3.32.2",
     "easy_sock": "^0.4.1",
     "express": "^4.18.2",
     "graphql": "^15.8.0",
@@ -34,6 +41,12 @@
     "koa-mount": "^4.0.0",
     "koa-static": "^5.0.0",
     "nodemon": "^3.0.1",
-    "protocol-buffers": "^5.0.0"
+    "protocol-buffers": "^5.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
