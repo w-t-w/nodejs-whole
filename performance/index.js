@@ -1,1 +1,2 @@
-require('./thread/index');
+require('./test');
+// require('./thread');
