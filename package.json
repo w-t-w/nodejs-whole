@@ -16,6 +16,7 @@
     "graphql": "nodemon ./graphql/index.js",
     "component": "webpack --config=./project/list/component/webpack.component.js --color",
     "ssr": "webpack --config=./project/list/backend/webpack.ssr.js --color",
+    "web": "webpack --config=./project/list/frontend/webpack.config.js --color",
     "server": "nodemon ./project/list/backend/server/index.js",
     "client": "nodemon ./project/list/backend/client/index.js"
   },
