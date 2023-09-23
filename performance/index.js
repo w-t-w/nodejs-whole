@@ -1,2 +1,3 @@
 // require('./test');
-require('./thread');
+// require('./thread');
+require('./guard');
