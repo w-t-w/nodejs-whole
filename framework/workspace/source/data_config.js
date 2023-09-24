@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PROTO_DIR = path.resolve(process.cwd(), './framework/backend/detail/proto/detail.proto');
+const PROTO_DIR = path.resolve(process.cwd(), './framework/workspace/source/proto/detail.proto');
 
 const data_config = {
     detail: {

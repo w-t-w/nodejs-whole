@@ -5,7 +5,7 @@ const run = require('./run');
 
 const PORT = 3000;
 
-const TEMPLATE_DIR = path.resolve(process.cwd(), './framework/config/play/template.html');
+const TEMPLATE_DIR = path.resolve(process.cwd(), './framework/config/play/template.tpl');
 
 (async () => {
     const data_config = require('../config/play/data_config');

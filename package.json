@@ -21,7 +21,8 @@
     "client": "nodemon ./project/list/backend/client/index.js",
     "performance": "nodemon ./performance/index.js",
     "framework:backend": "nodemon ./framework/backend/index.js",
-    "framework:frontend": "nodemon ./framework/frontend/index.js"
+    "framework:frontend": "nodemon ./framework/frontend/index.js",
+    "framework:workspace": "node ./framework/workspace/index.js"
   },
   "keywords": [
     "nodejs",
@@ -44,9 +45,12 @@
     "koa-graphql": "^0.12.0",
     "koa-mount": "^4.0.0",
     "koa-static": "^5.0.0",
+    "memory-fs": "^0.5.0",
+    "mkdirp": "^3.0.1",
     "nodemon": "^3.0.1",
     "protocol-buffers": "^5.0.0",
     "request": "^2.88.2",
+    "rimraf": "^5.0.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
