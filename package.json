@@ -20,7 +20,8 @@
     "server": "nodemon ./project/list/backend/server/index.js",
     "client": "nodemon ./project/list/backend/client/index.js",
     "performance": "nodemon ./performance/index.js",
-    "framework": "nodemon ./framework/backend/index.js"
+    "framework:backend": "nodemon ./framework/backend/index.js",
+    "framework:frontend": "nodemon ./framework/frontend/index.js"
   },
   "keywords": [
     "nodejs",
@@ -45,6 +46,7 @@
     "koa-static": "^5.0.0",
     "nodemon": "^3.0.1",
     "protocol-buffers": "^5.0.0",
+    "request": "^2.88.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
