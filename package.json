@@ -19,7 +19,8 @@
     "web": "webpack --config=./project/list/frontend/webpack.config.js --color",
     "server": "nodemon ./project/list/backend/server/index.js",
     "client": "nodemon ./project/list/backend/client/index.js",
-    "performance": "nodemon ./performance/index.js"
+    "performance": "nodemon ./performance/index.js",
+    "framework": "nodemon ./framework/backend/index.js"
   },
   "keywords": [
     "nodejs",
